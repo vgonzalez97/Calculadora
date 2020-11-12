@@ -19,13 +19,13 @@ public class CalculadoraController {
 
     @GetMapping(value = "/suma/{firstNumber}/{secondNumber}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.OK)
-    public Integer Suma(@PathVariable(value = "firstNumber", required = true) Integer firstNumber, @PathVariable(value = "secondNumber", required = true) Integer secondNumber){
+    public Integer Suma(@PathVariable(required = true) Integer firstNumber, @PathVariable(required = true) Integer secondNumber){
         return calculadoraService.suma(firstNumber,secondNumber);
     }
 
     @GetMapping(value = "/resta/{firstNumber}/{secondNumber}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.OK)
-    public Integer Resta(@PathVariable(value = "firstNumber", required = true) Integer firstNumber, @PathVariable(value = "secondNumber", required = true) Integer secondNumber){
+    public Integer Resta(@PathVariable(required = true) Integer firstNumber, @PathVariable(required = true) Integer secondNumber){
         return calculadoraService.resta(firstNumber,secondNumber);
     }
 }
