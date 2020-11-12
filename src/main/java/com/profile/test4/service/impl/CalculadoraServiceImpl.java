@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 
 /**
- * Implementación del servicio CalculadoraService
+ * Implementación servicio CalculadoraService
  */
 @Service("calculadoraService")
 public class CalculadoraServiceImpl implements CalculadoraService {
