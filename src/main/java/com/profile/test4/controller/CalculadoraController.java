@@ -9,12 +9,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class CalculadoraController {
-    
+
     @Autowired
     CalculadoraService calculadoraService;
 
     @GetMapping(value = "/suma", produces = MediaType.APPLICATION_JSON_VALUE)
     public Integer Suma(@RequestParam Integer firstNumber, @RequestParam Integer secondNumber){
         return calculadoraService.suma(firstNumber,secondNumber);
+    }
+
+    @GetMapping(value = "/resta", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Integer Resta(@RequestParam Integer firstNumber, @RequestParam Integer secondNumber){
+        return calculadoraService.resta(firstNumber,secondNumber);
     }
 }

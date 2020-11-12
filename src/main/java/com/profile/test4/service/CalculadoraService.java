@@ -5,6 +5,8 @@ public interface CalculadoraService {
 
 
 	Integer suma(Integer firstNumber, Integer secondNumber);
+
+	Integer resta(Integer firstNumber, Integer secondNumber);
 	
 
 }

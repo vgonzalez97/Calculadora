@@ -15,4 +15,10 @@ public class CalculadoraServiceImpl implements CalculadoraService {
 		Integer result = firstNmuber + secondNmuber;
 		return result;
 	}
+
+	@Override
+	public Integer resta(Integer firstNmuber, Integer secondNmuber) {
+		Integer result = firstNmuber - secondNmuber;
+		return result;
+	}
 }
