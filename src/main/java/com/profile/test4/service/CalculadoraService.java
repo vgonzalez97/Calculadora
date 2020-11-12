@@ -1,6 +1,8 @@
 package com.profile.test4.service;
 
 
+import java.math.BigDecimal;
+
 public interface CalculadoraService {
 
 	/**
@@ -11,7 +13,7 @@ public interface CalculadoraService {
 	 *
 	 * @return suma de los dos números
 	 */
-	Integer suma(Integer firstNumber, Integer secondNumber);
+	BigDecimal suma(BigDecimal firstNumber, BigDecimal secondNumber);
 
 	/**
 	 * resta de los dos elementos
@@ -22,7 +24,7 @@ public interface CalculadoraService {
 	 * @return resta el segundo número al primero
 	 */
 
-	Integer resta(Integer firstNumber, Integer secondNumber);
+	BigDecimal resta(BigDecimal firstNumber, BigDecimal secondNumber);
 	
 
 }
