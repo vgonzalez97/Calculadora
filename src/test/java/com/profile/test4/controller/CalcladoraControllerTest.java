@@ -20,7 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class CalcladoraControllerTest {
 
     @MockBean
-    CalculadoraService calculadoraService;
+    private CalculadoraService calculadoraService;
 
     @Autowired
     private MockMvc mockMvc;
